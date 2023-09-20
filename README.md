@@ -3,7 +3,7 @@ In this project we will show the design of a single ended Operational Transcondu
 we will use CMOS general pdk 90nm (gpdk90) technology by Cadence. 
 
 **Specifications**
-* $Gain = 35dB$
+* $Gain = 30dB$
 * $PM > 60 [deg]$
 * $ICMR- = 1.1[V]$
 * $ICMR+ = 1.6[V]$
@@ -15,7 +15,7 @@ we will use CMOS general pdk 90nm (gpdk90) technology by Cadence.
 * $C_{L} = 100[pF]$
 
 # Hand calculations & Design assumption
-We will start with some basic hand calculations to determine - $I_{tail}$, and Vov for each transistor - 
+We will start with some basic hand calculations to determine - $I_{tail}$, and $V_{ov}$ for each transistor - 
 
 $T_s = T_{slew} + T_{sm,sig}$ = $\frac{V_{slew}*C_L}{I_{tail}}$ + $\frac{C_L}{g_m}$ * $ln(\frac{(V_{swing}-V_{slew})}{V_{acc}})$
 
@@ -24,6 +24,7 @@ After plugging the numbers from spec (see Excel attached) we calculate $I_{tail}
 **Calculating Vov** - 
 
 $V_{ICMR-} = V_{gs1} + V_{ov5} = 1.1[V]$
+
 $V_{ICMR+} = V_{AA} - V_{sg3} + V_{th1} = 1.6[V]$
 
 from simulation of worst case corner (SS, 125) we saw that $V_{th} = 0.7[V]$. 
