@@ -29,7 +29,7 @@ $V_{ICMR+} = V_{AA} - V_{sg3} + V_{th1} = 1.6[V]$
 
 from simulation of worst case corner (SS, 125) we saw that $V_{th} = 0.7[V]$. 
 
-We will target for high $V_{ov}$ for the current mirrors M5,M3,M5 $\approx 0.2V$ and 0.1V for the gm stage (M1,M2)
+We will target for high $V_{ov}$ for the current mirrors M3,M4,M5 $\approx 0.2V$ and 0.1V for the gm stage (M1,M2)
 
 **Other assumptions** - 
 
